@@ -20,7 +20,7 @@ function handleChange(inputIdentifier, newValue){
   setUserInput(prevUserInput => {
       return{
           ...prevUserInput,
-          [inputIdentifier]: newValue
+          [inputIdentifier]: +newValue
       };
   });
 }
