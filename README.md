@@ -1,2 +1,10 @@
 # 2024_ReactEssentials_Practice
-Investment dummy site testing React essential concepts
+Simple dummy 'Investment' site testing some essential React concepts:
+- Components
+- Event Handling
+- Two-Way Binding
+- Lifting States
+- Computing Values, Property Handling
+- Outputting Results in a List
+- Deriving Values
+- Outputting Conditional Content
