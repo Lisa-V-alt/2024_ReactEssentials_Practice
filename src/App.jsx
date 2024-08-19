@@ -14,6 +14,10 @@ function App() {
     duration: 10,
 });
 
+//error handling/validity check
+//duration should always be positive
+const inputIsValid = userInput.duration >= 1;
+
 //function that updates the default state:
 //properties are dynamically set depending on the value of inputIdentifier
 function handleChange(inputIdentifier, newValue){
@@ -30,7 +34,8 @@ function handleChange(inputIdentifier, newValue){
     <>
     <Header />
     <UserInput userInput={userInput} onChange={handleChange} />
-    <Results input={userInput} />
+    {!inputIsValid && <p className="center">Error: Please enter a duration greater than zero.</p>}
+    {inputIsValid && <Results input={userInput} />} {/*  Results are only shown if input is valid */}
     </>
   );
 }
